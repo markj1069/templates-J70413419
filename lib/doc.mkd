@@ -1,0 +1,234 @@
+changecom(`/*', `*/')dnl
+
+keywords: dc_keywords
+
+## Abstract
+
+## Introduction
+
+$$ \mu \equiv \, \text{mean} $$
+
+$$ \mu_{1/2} \equiv \, \text{Median} $$
+
+$$ \mu_{max} \equiv \, \text{Mode} $$
+
+There is no standard notation to describe these three point probablilty distributions. For example Forbes (2011c) use the ABC notation where the baseline of the triangle is the segment AB and the peak is located at C. Vose (N/D) uses the ACB notation where the baseline of the triangle is the segment AC and the peak is located at B.
+
+
+
+## Bibliography
+
+This bibliography is organized by author last name and date.
+The author welcomes additions and corrections.
+
+**! Bobbitt, Zach. 2021a.**
+
+: “An Introduction to the Triangular Distribution.” Education. Statology. January 28, 2021. [https://www.statology.org/triangular-distribution/](https://www.statology.org/triangular-distribution/)
+
+: Bobbit introduces the triangular distribution using the ABC notation. He also provides the probability distribution and cumulative distribution functions along with the mean, mode, and variance.
+
+**! ——— 2021b.**
+
+: “Triangular Distribution Calculator.” Education. Statology. February 2, 2021. [https://www.statology.org/triangular-distribution-calculator/](https://www.statology.org/triangular-distribution-calculator/).
+
+: Bobbitt has an online calculator that will take your values for ABC and position x and return: p(x), mean,  median,  mode, and variance.
+
+**! ———. 2021c.**
+
+: “How to Use the Triangular Distribution in Excel (With Examples).” Education. Statology. March 28, 2021. [https://www.statology.org/triangular-distribution-excel/](https://www.statology.org/triangular-distribution-excel/)
+
+: Bobbitt (2021c) implements the triangular distribution calculation in Excel.
+
+**! Broadleaf Capital. 2014.**
+
+: “Beta PERT Origins.” Broadleaf Capital International Pty Ltd. [http://broadleaf.com.au/resource-material/beta-pert-origins/](http://broadleaf.com.au/resource-material/beta-pert-origins/).
+
+: Broadleaf looks back at the orgins of PERT project management by Malcolm _et al._ (1959) and Charles Clark (1962). They focus on Clark's selection of the beta distribution to calculate means and standard deviations from three-point estimates.
+
+: > The modern Beta PERT is a reverse engineered replica of the distribution chosen for convenience in the 1950s to convert three point estimates into a mean and variance.
+
+: > It might be argued that the Beta PERT would not have stood the test of time if it did not offer something useful. For the purposes of project cost and schedule modelling, it has a satisfying smooth shape, as opposed to the unnatural angular shape of the triangular distribution, and it can represent skew. That is all.
+
+**! Clark, Charles E. 1962.**
+
+: “The PERT Model for the Distribution of an Activity Time—Letter to the Editor.” _Operations Research_ 10 (3): 405–6. https://doi.org/10.1287/opre.10.3.405.
+
+: Charles Clark expands on his decision to use the beta distribution on the original PERT paper. He approximated (406)
+
+: > … the expected value of the mean and the midrange, the mode carring two-thirds of the total weight. This together with the use on one-sixth of the range for the standard deviation are accepted as the PERT estimates of the expected value and standad deviation of an activity time.
+
+: Clark's mean approximation is:
+
+: $$ \mu = \left( \frac{1}{3} \right) \frac{a+b}{2} + \left( \frac{2}{3} \right) c $$
+
+: $$ \sigma^2 = \left( \frac{b-a}{6}\right)^2 $$
+
+**Cook, John D. 2015a.**
+: “Fitting a Triangular Distribution.” Corporate Blog. John D. Cook Consulting (blog). March 24, 2015. http://www.johndcook.com/blog/2015/03/24/fitting-a-triangular-distribution/.
+
+
+**———. 2015b.**
+
+: “Fitting a Triangular Distribution.” Magazine. DZone Big Data Zone. April 5, 2015. [https://dzone.com/articles/fitting-triangular](https://dzone.com/articles/fitting-triangular).
+
+: John Cook suggest fitting a triangular distribution by selecting $a$ and $b$ to be about the minimum and maximum of the data. You can approximate $c$ by calculating the mean or median of the data.
+
+**! Davis, William W. 2015.**
+
+: “What Is Statistical PERT.” Corporate. Statistical PERT. September 5, 2015. [http://www.statisticalpert.com/What_is_Statistical_PERT.pdf](http://www.statisticalpert.com/What_is_Statistical_PERT.pdf).
+
+: >  The normal distribution can also use the PERT formula to calculate the mean for a normal curve, but in plotting a normal curve, there could be points on the curve that are smaller the minimum value used in the PERT formula, or there could be points that exceed PERT’s maximum value. The probabilities associated with such points, however, are very, very small – small enough that relying on the PERT formula to calculate an estimate of a normal curve mean usually poses little or no problem.
+
+: Davis hints at the Central Limit Theorm (Weisstein 2021b) that suggests:
+
+: > The "fuzzy" central limit theorem says that data which are influenced by many small and unrelated random effects are approximately normally distributed.
+
+**Forbes, Catherine S., _et al._ 2011a.**
+
+: Statistical Distributions. 4th ed. Wiley Series in Probability and Mathmetical Statistics. Hoboken, NJ: John Wiley & Sons. [http://www.worldcat.org/oclc/732338141](http://www.worldcat.org/oclc/732338141).
+
+: The 40 distributions of supported by the reference are listed in WorldCat.
+
+**! ———. 2011b.**
+
+: “§08 Beta Distribution.” In Statistical Distributions, 4th ed., 55–61. Wiley Series in Probability and Mathmetical Statistics. Hoboken, NJ: John Wiley & Sons. [http://www.worldcat.org/oclc/732338141](http://www.worldcat.org/oclc/732338141).
+
+: : The beta probability distribution is given by
+
+: $$ b(x;\nu,\omega,a,b) = \begin{cases} 0 & x \le a \\ \frac{(x-a)^{\nu-1}(b-x)^{\omega-1}}{B(\nu,\omega)(b-a)^{\nu+\omega-1}} & a \le x \le b \\ 0 & b \le x \end{cases} $$
+
+: where the parameters $\nu$ and $\omega$ are positive real quantities and the varable $x$ satisfies $a \le x \le b$. The quanitity $B(\nu,\omega)$ is given by
+
+: $$ B(\nu,\omega) = \int_{0}^{1}u^{\nu-1} \left( 1-u \right)^{\omega-1}  du $$
+
+**! ——— 2011c.**
+
+: “§44 Triangular Distribution.” In Statistical Distributions, 4th ed., 189–90. Wiley Series in Probability and Mathmetical Statistics. Hoboken, NJ: John Wiley & Sons. [http://www.worldcat.org/oclc/732338141](http://www.worldcat.org/oclc/732338141).
+
+: The trianglar probability distribution is given by:
+
+: $$ t(x;a,b,c) = \begin{cases} 0 & x \le a \\ \frac{2(x-a)}{(b-a)(b-c)} & a \le x \le c \\ \frac{2(b-x)}{(b-a)(b-c)} & c \le x \le b\\ 1 & b \le x \end{cases} $$
+
+**! Golenko-Ginzburg, Dimitri. 1988.**
+
+: “On the Distribution of Activity Time in PERT.” _Journal of the Operational Research Society_ 39 (8): 767–71. https://doi.org/10.1057/jors.1988.132.
+
+
+: Dimitri Golenko-Ginzburg writes in his abstract:
+
+: > In PERT analysis the activity-time distribution is assumed to be a beta distribution, and the mean and variance of the activity time are estimated on the basis of the ‘pessimistic’, ‘most likely’ and ‘optimistic’ completion times, which are subjectively determined by an analyst. In this paper, on the basis of the study of the PERT assumptions, we present an improvement of these estimates. It is also shown that, by means of additional reasonable assumptions, the activity-time distribution in PERT analysis may be essentially simplified. 
+
+: David Vose (2017) reports:
+
+: > Golenko-Ginzburg (1988) describes a study that analyzed many PERT networks and concluded that "the 'most likely' activity-time estimate m [mode] is practically useless." They found that the location of the mode in most project tasks was approximately one third of the distance from the Min to the Max, _i.e._:
+
+: > $$ Mode = Min + \frac{(Max-Min)}{3} $$
+
+: > Taking the $Beta4(a1,a2,min, max)$ distribution again, this equates to  $a_1 = 2$, $a_2= 3$.  Thus, from Golenko-Ginzburg's viewpoint it is sufficient to use
+
+: > $$ Beta4(2,3,min,max) $$
+
+: > in place of
+
+: > $$ PERT(min,mode,max) $$
+
+: > with the added advantage that one is only asking a subject matter expert for two values.
+
+
+**! Jensen, Paul A. 2004.**
+
+: “Project Management: Beta Distribution.” Education. Operations Management/Industrial Engineering. 2004. [https://utw11041.utweb.utexas.edu/ORMM/omie/computation/unit/project/beta.html](https://utw11041.utweb.utexas.edu/ORMM/omie/computation/unit/project/beta.html).
+
+: Paul Jensen investigates the beta probability distribution used in his project management software. He discusses the beta probability distribution and traditional PERT mean and standard deviation.
+
+**! Leemis, Larry. 2012.**
+
+: “Triangular Distributions.” William and Mary, Department of Mathematics. [http://www.math.wm.edu/~leemis/chart/UDR/PDFs/TriangularV.pdf](http://www.math.wm.edu/~leemis/chart/UDR/PDFs/TriangularV.pdf).
+
+: Larry Leemis provides the basis for generating triangularly distributed random numbers along with pseudo code.
+
+**! Malcolm, D. G., J. H. Roseboom, Charles E. Clark, and W. Fazar. 1959.**
+
+: “Application of a Technique for Research and Development Program Evaluation.” Operations Research 7 (5): 646–69. https://doi.org/10.1287/opre.7.5.646.
+
+: > This paper describes the development and application of a technique for measuring and controlling development progress for the Polaris Fleet Ballistic Missile program, Special Projects Office, Bureau of Ordnance, U.S. Navy. Project PERT (Program Evaluation Research Task) was set up to develop, test, and implement a methodology for providing management with integrated and quantitative evaluation of (a) progress to date and the outlook for accomplishing the objectives of the FBM program, (b) validity of established plans and schedules for accomplishing the program objectives, and (c) effects of changes proposed in established plans. In the PERT model, the R and D program is characterized as a network of interrelated events to be achieved in proper ordered sequence. Basic data for the analysis consists of elapsed time estimates for activities which connect dependent events in the network. The time estimates are obtained from responsible technical persons and are subsequently expressed in probability terms. This model is described. Test of the model on a specific component, design of a management control system properly related to existing management systems, reduction to the NORC computer, difficulties in implementation and preliminary results to date are discussed. Limitations of the model, and possible refinements and use of the computer model for testing schedules and for management experimentation in resource and performance tradeoffs are described.
+
+**! Octave Forge. 2020.**
+
+: “List of Functions for the Octave Statistics Package.” Software. Octave Forge. March 23, 2020. [https://octave.sourceforge.io/statistics/overview.html#Other](https://octave.sourceforge.io/statistics/overview.html#Other).
+
+: Octave Core Functions include betarnd to calculate triangular random numbers.
+
+**! Structured Data. N/D.**
+
+: “The Beta-PERT Distribution.” Corporate. RiskAMP. N/D. [https://www.riskamp.com/beta-pert#using-the-pert-distribution-in-excel-with-the-riskamp-add-in](https://www.riskamp.com/beta-pert#using-the-pert-distribution-in-excel-with-the-riskamp-add-in).
+
+: RiskAMP describes the Beta PERT Distribution with examples. They also indtroduce the Modified Beta PERT Distribution.
+
+**! Vose, David. 2017.**
+
+: “PERT Distribution.” Corporate. Vose Software: Putting Numbers Around Risk. January 1, 2017. [https://www.vosesoftware.com/riskwiki/PERTdistribution.php](https://www.vosesoftware.com/riskwiki/PERTdistribution.php).
+
+: Vose Software is a comericial software provider that uses three-point distributions. They 
+
+**———. N/D.**
+
+: “Probability Distributions Used in Tamara.” Corporate. Vose Software: Putting Numbers Around Risk. N/D. [https://www.vosesoftware.com/riskwiki/DistributionsusedinTamara.php](https://www.vosesoftware.com/riskwiki/DistributionsusedinTamara.php).
+
+**! Walck, Christian. 2007a.**
+
+: _Handbook on Statistical Distributions for Experimentalists._ 3rd ed. Stockholm: University of Stockholm, Department of Physics, Particle Physics Group. [http://staff.fysik.su.se/~walck/suf9601.pdf](http://staff.fysik.su.se/~walck/suf9601.pdf).
+
+: Christian Walck's statistical distribution handbook is currently available on the web. He emphazes the distribution moments and generating random numbers with the described distributions.
+
+**! ———. 2007b.**
+
+: “§04 Beta Distribution.” In _Handbook on Statistical Distributions for Experimentalists_, 3rd ed. 150–151. Stockholm: University of Stockholm, Department of Physics, Particle Physics Group. http://staff.fysik.su.se/~walck/suf9601.pdf.
+
+: The beta probability distribution is given by
+
+: $$ f(x;p,q) = \frac{1}{B(p,q)} x^{p-1}(1-x)^{q-1} $$
+
+: where the parameters $p$ and $q$ are positive real quantities and the varable $x$ satisfies $0 \le x \le 1$. The quanitity $B(p,q)$ is the beta function defined in terms of the more common Gamma function as
+
+: $$ B(p,q) = \frac{\Gamma(p)\Gamma(q)}{\Gamma(p+q)} $$
+
+**! ———. 2007c.**
+
+: “§39 Triangle Distribution.” In _Handbook on Statistical Distributions for Experimentalists_, 3rd ed. 13–15. Stockholm: University of Stockholm, Department of Physics, Particle Physics Group. http://staff.fysik.su.se/~walck/suf9601.pdf.
+
+: The triangular distribution is given by
+
+: $$ f(x;\mu,\Gamma) = \frac{-|x-\mu|}{\Gamma^2} + \frac{1}{\Gamma} $$
+
+: where the variable $x$ is bound to the interval $\mu - \Gamma \le x \le \mu + \Gamma$ and the location and scale parameters $\mu$ and $\Gamma$ all are real numbers.
+
+**Weisstein, Eric W. 2021a.**
+
+: “Triangular Distribution.” Education. Wolfram MathWorld. Wolfram Research, Inc. October 15, 2021. [https://mathworld.wolfram.com/TriangularDistribution.html](https://mathworld.wolfram.com/TriangularDistribution.html).
+
+**———. 2021b.**
+
+: “Central Limit Theorem.” Education. Wolfram MathWorld. Wolfram Research, Inc. October 27, 2021. [https://mathworld.wolfram.com/CentralLimitTheorem.html](https://mathworld.wolfram.com/CentralLimitTheorem.html).
+
+**Wikipedia. 2021a.**
+
+: “PERT Distribution.” In Wikipedia: The Free Encyclopedia. San Francisco: Wikimedia Foundation, Inc. Wikipedia. [https://en.wikipedia.org/w/index.php?title=PERT_distribution&oldid=1029692808](https://en.wikipedia.org/w/index.php?title=PERT_distribution&oldid=1029692808).
+
+**———. 2021b.**
+
+: “Triangular Distribution.” In Wikipedia: The Free Encyclopedia. San Francisco: Wikimedia Foundation, Inc. Wikipedia. [https://en.wikipedia.org/w/index.php?title=Triangular_distribution&oldid=1049342734](https://en.wikipedia.org/w/index.php?title=Triangular_distribution&oldid=1049342734).
+
+**———. 2021c.**
+
+: “Beta Distribution.” In Wikipedia: The Free Encyclopedia. San Francisco: Wikimedia Foundation, Inc. [https://en.wikipedia.org/w/index.php?title=Beta_distribution&oldid=1050162254](https://en.wikipedia.org/w/index.php?title=Beta_distribution&oldid=1050162254).
+
+**Wolfram Alpha. 2021.**
+
+: “Triangular Distribution.” Education. Wolfram Alpha: Computational Intelligence. 2021. [https://www.wolframalpha.com/input/?i=triangular+distribution](https://www.wolframalpha.com/input/?i=triangular+distribution).
+
+**Wright, Dawn. 2021.**
+: “‘Easy’ Excel Inverse Triangular Distribution for Monte Carlo Simulations Redux.” Education. Dr. Dawn Wright (blog). September 18, 2021. [https://www.drdawnwright.com/easy-excel-inverse-triangular-distribution-for-monte-carlo-simulations/](https://www.drdawnwright.com/easy-excel-inverse-triangular-distribution-for-monte-carlo-simulations/).
+
+**Zey, Chelli, James J. Filliben, and Alan Heckert, eds. 2017.**
+: “§1.3.6.6.17. Beta Distribution.” In _NIST/SEMATECH Engineering Statistics e-Handbook_, Online. Washington, DC: National Institute of Standards and Technology. [https://www.itl.nist.gov/div898/handbook/eda/section3/eda366h.htm](https://www.itl.nist.gov/div898/handbook/eda/section3/eda366h.htm).
