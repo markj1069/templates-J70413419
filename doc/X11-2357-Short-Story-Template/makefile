@@ -4,6 +4,7 @@ MAC = /usr/bin/m4
 SED = /usr/bin/sed
 LIB = /mnt/d/db/Zotero/My-Library.yaml
 PAN = /usr/bin/pandoc
+RMF = /usr/bin/rm
 
 
 # Targets
@@ -37,7 +38,7 @@ doc.o.mkd:		doc.m4 doc.mkd doc.o.yaml
 	$(MAC) doc.m4 doc.mkd >doc.o.mkd
 
 doc.html html:	doc.o.mkd doc.o.yaml doc.m4
-	pandoc doc.o.mkd \
+	$(PAN) doc.o.mkd \
     	--read=markdown --write=html5 --mathjax \
     	--citeproc --bibliography=$(LIB) \
     	--metadata=link-citations --metadata-file=doc.o.yaml \
@@ -45,7 +46,7 @@ doc.html html:	doc.o.mkd doc.o.yaml doc.m4
     	--output=doc.html
 
 doc.pdf pdf:	doc.o.mkd doc.o.yaml doc.m4
-	pandoc doc.o.mkd \
+	$(PAN) doc.o.mkd \
     	--read=markdown --write=pdf \
     	--citeproc --bibliography=$(LIB) \
     	--metadata=link-citations --metadata-file=doc.o.yaml \
@@ -53,8 +54,8 @@ doc.pdf pdf:	doc.o.mkd doc.o.yaml doc.m4
     	--output=doc.pdf
 
 clean:
-	rm -f doc.o.mkd  doc.o.yaml *.tmp
+	$(RMF) doc.o.mkd  doc.o.yaml *.tmp
 
 cleanall:
-	rm -f doc.o.mkd  doc.o.yaml *.tmp
-	rm -f doc.html doc.pdf
+	$(RMF) doc.o.mkd  doc.o.yaml *.tmp
+	$(RMF) doc.html doc.pdf
