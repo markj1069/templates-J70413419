@@ -1,0 +1,19 @@
+BEGIN:VCARD
+VERSION:4.0
+SOURCE:http://mark-jensen.org/vcard/mark.vcard
+FN:Mark Jensen
+N;SORT-AS="Jensen,Mark":Jensen;Mark;J.;;Ph.D.
+NICKNAME:Mark
+ADR;TYPE=HOME:8651 Stephens Church RD #D-108;Wilmington;NC;28411;USA
+TEL;VALUE=uri;PREF=1;TYPE=text:tel:+1-910-258-8927
+ANNIVERSARY:--0913
+BDAY:--0517
+GENDER:M
+CLASS:public
+EMAIL;TYPE=personal:mark@jensen.net
+KIND:individual
+LANG:en-US
+ORG:Retired
+TZ:America/New_York
+REV:20240812T052900Z
+END:VCARD
