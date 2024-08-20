@@ -91,7 +91,7 @@ define(`ndc_creator_st',`NC')dnl
 define(`ndc_creator_zip',`28411-7982')dnl
 define(`ndc_to',`[To]')dnl
 define(`ndc_to_address_1',`[To Address 1]')dnl
-define(`ndc_to_address_2',`[To Address 1])dnl
+define(`ndc_to_address_2',`[To Address 1]')dnl
 define(`ndc_to_city',`[To City]')dnl
 define(`ndc_to_st',`[To State]')dnl
 define(`ndc_to_zip',`[To Zip]')dnl
@@ -112,3 +112,4 @@ define(`dnc_enc_3',`(N/A)')dnl
 define(`dnc_enc_4',`(N/A)')dnl
 define(`dnc_enc_5',`(N/A)')dnl
 define(`dnc_enc_6',`(N/A)')dnl
+
