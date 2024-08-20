@@ -31,7 +31,7 @@ define(`dc_description_note', `(N/A)')dnl
 define(`dc_description_release', `(N/A)')dnl
 define(`dc_description_tableOfContents', `(N/A)')dnl
 define(`dc_type', `text/markdown; charset=UTF-8')dnl
-define(`dc_source', `https://github.com/markj1069/templates-J70413419/tree/master/doc/G11-6715/V00')dnl
+define(`dc_source', `https://github.com/markj1069/templates-J70413419/tree/master/doc/X11-2357-Short-Story-Template')dnl
 define(`dc_relation', `Version 00')dnl
 define(`dc_relation_isVersionOf', `(N/A)')dnl
 define(`dc_relation_hasVersion', `(N/A)')dnl
@@ -53,9 +53,9 @@ define(`dc_creator_jobTitle', `Independent Scholar')
 define(`dc_publisher', `Mark J. Jensen')dnl
 define(`dc_contributor', `(N/A)')dnl
 define(`dc_contributor_role', `(N/A)')dnl
-define(`dc_rights', `CC BY 4.0')dnl
+define(`dc_rights', `CC BY-SA 4.0')dnl
 define(`dc_rights_accessRights', `See license.')dnl
-define(`dc_rights_license', `https://creativecommons.org/licenses/by/4.0/legalcode')dnl
+define(`dc_rights_license', `https://creativecommons.org/licenses/by-sa/4.0/')dnl
 define(`dc_date', `YYYY-MM-DD')dnl
 define(`dc_date_accepted', `YYYY-MM-DD')dnl
 define(`dc_date_created', `YYYY-MM-DD')dnl
