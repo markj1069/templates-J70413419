@@ -1,0 +1,108 @@
+
+---
+## Dublin Core Metadata Initiative
+
+dc.title: "Script Name"
+dc.title.alternative: "Script Name Man Page"
+dc.title.short: "Script Name"
+dc.title.subtitle: "Document Templates"
+dc.subject: N/A
+dc.description: |
+    The *man pages*, short for *reference manual pages*,
+    are your keys to Linux.
+    Everything you want to know is there – take it all in and run with it.
+    The collection of documents will never win a Pulitzer prize,
+    but the set is quite accurate and complete.
+    The man pages are *the* primary source,
+    and that authority is well-known.
+dc.description.abstract: The *man pages*, short for *reference manual pages*, are your keys to Linux.
+dc.description.note: (N/A)
+dc.description.release: "(N/A)"
+dc.description.tableOfContents: (N/A)
+dc.type: "text/markdown; charset=UTF-8"
+dc.source: "https://github.com/markj1069/templates-J70413419/tree/master/doc/X77-6734/V00"
+dc.relation: "Version 00"
+dc.relation.isVersionOf: "(N/A)"
+dc.relation.hasVersion: "(N/A)"
+dc.relation.isReplacedBy: "(N/A)"
+dc.relation.replaces: "(N/A)"
+dc.relation.requires: "(N/A)"
+dc.relation.isPartOf: "(N/A)"
+dc.relation.hasPart: "(N/A)"
+dc.relation.isReferencedBy: "(N/A)"
+dc.relation.references: "(N/A)"
+dc.relation.isFormatOf: "(N/A)"
+dc.relation.hasFormat: "(N/A)"
+dc.relation.conformsTo: "(N/A)"
+dc.coverage: "(N/A)"
+
+# Intellectual Property
+
+dc.creator: "Mark J. Jensen"
+dc.publisher: "Mark J. Jensen"
+dc.contributor: "(N/A)"
+dc.contributor.role: "(N/A)"
+dc.rights: "CC BY 4.0"
+dc.rights.accessRights: "See license."
+dc.rights.license: "https://creativecommons.org/licenses/by/4.0/legalcode"
+
+# Instantiation
+
+dc.date: "YYYY-MM-DD"
+dc.date.accepted: "YYYY-MM-DD"
+dc.date.created: "YYYY-MM-DD"
+dc.date.dateAccepted: "YYYY-MM-DD"
+dc.date.dateCopyrighted: "YYYY-MM-DD"
+dc.date.valid: "YYYY-MM-DD"
+dc.date.available: "YYYY-MM-DD"
+dc.date.issued: "YYYY-MM-DD"
+dc.date.modified: "YYYY-MM-DD"
+dc.format: "Specification"
+dc.format.extent: "(N/A)"
+dc.format.medium: "Markdown"
+dc.identifier.doc: "X77-6734-00"
+dc.identifier.proj: "J70413419"
+dc.identifier.bibliographicCitation: "(N/A)"
+dc.language: "en-US"
+
+# DCMI Terms
+
+dc.accrualMethod: "Item Creation"
+dc.accrualPeriodicity: "(N/A)"
+dc.accrualPolicy: "(N/A)"
+dc.audience: "Other"
+dc.audience.educationLevel: "(N/A)"
+dc.instructionalMethod: "(N/A)"
+dc.provenance: "Item Creation"
+dc.rightsHolder: "Mark J. Jensen"
+
+# Pandoc Metadata
+
+title: "Script Name"
+title.short: "Script Name"
+author: "Mark J. Jensen"
+date: "YYYY-MM-DD"
+documentclass: "scrartcl"
+geometry:
+- top=72pt
+- left=72pt
+- right=60pt
+- heightrounded
+papersize: "letter"
+fontsize: "12pt"
+links-as-notes: "true"
+subject: "software, man page, template, , , "
+stand-alone: true
+keywords: "software, man page, template, , , "
+description: "|
+    The *man pages*, short for *reference manual pages*,
+    are your keys to Linux.
+    Everything you want to know is there – take it all in and run with it.
+    The collection of documents will never win a Pulitzer prize,
+    but the set is quite accurate and complete.
+    The man pages are *the* primary source,
+    and that authority is well-known."
+lang: "en-US"
+test: "Independent Scholar"
+toc: true
+...
