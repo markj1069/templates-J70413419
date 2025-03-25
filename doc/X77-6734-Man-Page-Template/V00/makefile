@@ -63,5 +63,5 @@ clean:
 
 cleanall:
 	rm -f doc.o.mkd  doc.o.yaml *.tmp
-	rm -f doc.html doc.pdf
+	rm -f doc.html doc.man doc.pdf
 
