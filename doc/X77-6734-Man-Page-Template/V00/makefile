@@ -9,6 +9,7 @@ SED = /usr/bin/sed
 .PHONY: clean
 .PHONY: cleanall
 .PHONY: html
+.PHONY: man
 .PHONY: pdf
 .PHONY: yaml
 
@@ -40,6 +41,14 @@ doc.html html:	doc.o.mkd doc.o.yaml doc.m4
     	--metadata=link-citations --metadata-file=doc.o.yaml \
     	--standalone --shift-heading-level-by=-1 \
     	--output=doc.html
+
+doc.man man:	doc.o.mkd doc.o.yaml doc.m4
+	pandoc doc.o.mkd \
+    	--read=markdown --write=man --mathjax \
+    	--citeproc --bibliography=/mnt/d/db/Zotero/My-Library.yaml \
+    	--metadata=link-citations --metadata-file=doc.o.yaml \
+    	--standalone --shift-heading-level-by=-1 \
+    	--output=doc.man
 
 doc.pdf pdf:	doc.o.mkd doc.o.yaml doc.m4
 	pandoc doc.o.mkd \

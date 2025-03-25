@@ -2,13 +2,13 @@ changecom(`/*', `*/')dnl
 
 # dc_title
 
-## NAME
+## Name
 
-**script name** — One-line description of this script's purpose
+**dc_title** — One-line description of this script's purpose
 
-## SYNOPSIS
+## Synopsis
 
-**script name**
+**dc_title**
 [**--input**=_input_file_ | **-i** _input_file_]
 [**--output**=_output_file_ | **-o** _output_file_]
 [**--help**]
@@ -24,11 +24,15 @@ changecom(`/*', `*/')dnl
 [_input_file_ ...]
 
 
-## DESCRIPTION
+## Description
 
-[Describe how the audience will fid value in the product.]
+What does this script do?
 
-### OPTIONS & AUGUMENTS
+### Options & Arguments
+
+Enter the unique options and arguments here.
+
+#### Default Options & Arguments
 
 [**--input**=_input_file_ | **-i** _input_file_]
 : Specify an input source [default: STDIN]. **--input** may be specified multiple times.
@@ -40,7 +44,7 @@ changecom(`/*', `*/')dnl
 : Print this summary
 
 [**--log**]
-: switch to print the log file to _script name.log_.
+: switch to print the log file to _dc_title.log_.
 
 [**--logfile**=_logfile_]
 : Print the logfile to _logfile_.
@@ -61,17 +65,47 @@ changecom(`/*', `*/')dnl
 : Print the version information
 
 [**--verbose**] | [**-v**]
-: Print detailed information the right most option determines which applies --quite or --verbose
+: Print detailed information from this script.
 
-[--]
-: Flag showing that there are no more options on this command line.
+[`--`]
+: This is a flag showing that there are no more options on this command line.
 
 [_input_file_ ...]
 : Specify input zero or more input sources.
 
-## NOTES & CAVEATS
+## SECURITY
 
-## DIAGNOSTICS
+**Note:** You must be the superuser to run this function.
+
+**Warning:** This function contains security info.
+Do not set world-readable. Better yet, redesign
+so that you do not save security information in your source code.
+
+You do not need superuser authority to run this script.
+
+## EXAMPLES
+
+Example 1
+
+Example 2
+
+...
+
+## Notes & Caveats
+
+What additional information would be useful to a programmer and user?
+
+## Version
+
+Which version
+
+## History
+
+| Version  | Author         | Description             | Date          |
+|:---------|:---------------|:------------------------|:--------------|
+| 00.00.01 | Mark J. Jensen | Initial Release         |  2025-03-24   |
+
+## Diagnostics
 
 ### OLS9999F
 
@@ -83,11 +117,11 @@ Fatal Error, EX_CODE=16
 
 #### Explanation:
 
-Why was this error message thrown.
+Why was this error message thrown?
 
 #### System Action
 
-The system action depends upon the error conditions described in the accompaning messages.
+The system action depends upon the error conditions described in the accompanying messages.
 
 #### User Response
 
@@ -95,94 +129,57 @@ See the specific error message to determine the user action.
 
 #### Programmer Response
 
-Isolate call to **ols_rd_excode** and supply the intended exit code.
+Isolate the call to **ols_rd_excode** and supply the intended exit code.
 
-#### System Programer Response
+#### System Programmer Response
 
-Analysize the errors to determine your response.
+Analyze the errors to determine your response.
 
 ## SEE ALSO
-[Write who the product is intended to serve.]
+What other scripts and commands are helpful for the programmer and user?
 
-## BUGS
+## Configuration & Environmnet
 
-[Describe how the intended ausience will use this product.]
+What environmental variables are necessary for this script to operate?
 
-## AUTHOR
-[Give a summary fo the functions the software will perform and the features that will be included.]
+## Dependencies
 
-## COPYRIGHT
+A list of all of the other scripts that this script relies upon, including any
+restrictions on versions, part of this script's distribution,
+or must be installed separately.
 
-[List the design requirements, graphics requirements, operating system requirements and constraints of the product.]
+
+## Incompatabilities
+
+The programmer and user can not use this script with the following commands.
+This restriction may be due to name conflicts in the interface, competition for system or program resources, or internal limitations of BASH (for example,
+many modules that use source code filters are mutually incompatible).
+
+## Files
+
+List the files dc_title uses.
+
+## Bugs & Limitations
+
+List known problems with the module, together with some indication of whether they are likely to be fixed in an upcoming release.
+
+Also, list the restrictions on the module's features: data types that cannot be handled, performance issues and the circumstances in which they may arise, practical limitations on the size of data sets, special cases that are not (yet) handled, etc.
+
+The initial template usually has: "There are no known bugs in this module."
+
+Please report problems to [Maintainer name(s)](mailto:xxx@yyy.zzz).
+
+## Author
+Author <author@server>
+
+## License & Copyright
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/markj1069/templates-J70413419/tree/master/doc/X77-6734/V00">X77-6735 Man Page Template</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/jensenmark/">Mark J Jensen</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+
 
 ## SOURCE
 
-### User Interface Requirements
-
-[Describe the logic behind the interactions between the users and the software (screen layouts, style guides, _etc_).]
-
-### Hardware Interface Requireements
-
-[List the supported devices the software is intended to run on, the network requirements & the communication protocols to be used.]
-
-### Softare Interface Requirements
-
-[Include the connections between your product and otheer software components, including frontend/backend framework libraries, _etc._]
-
-### Communication Interface Requirements
-
-[List any requirements for the communication programs your product will use, like emails or embedded forms.]
-
-## Non-Functional Requirements
-
-### Security
-
-[Include any privacy and data protection regulations that should be adhered to.]
-
-### Capacity
-
-[Describe the current and future storage needs for your software.]
-
-### Compatibility
-
-[List the minimun hardware requirements for your software.]
-
-### Reliability
-
-[Calculate what the critical failure time of your product would be under normal usage.]
-
-### Scalability
-
-[Calculate the highest workloads under which your software will still preform as expected.]
-
-### Maintainability
-
-[Describe how continuous integration should be used to deploy features and bug fixes quickly.]
-
-### Useability
-
-[Describe how easy it should be for end-users to use your software.]
-
-### Other
-
-[List any additional non-functional requirements.]
-
-## References
-
-[Enter references here.]
-
-## Acknowledgements
-
-[Enter acknowledgements here.]
-
-## Appendices
-
-### Definitions & Acronyms
-
-| Word                | Definition                     |
-|:--------------------|:-------------------------------|
-| Word                | Definition                     |
-| Acronym             | Description                    |
+**dc_title** can be found at [X77-6734-Man-Page-Template](https://github.com/markj1069/templates-J70413419/tree/master/doc/X77-6734-Man-Page-Template).
 
 \newpage
 
@@ -222,11 +219,11 @@ dc_description_abstract
 
 ### Revision
 
-| Version      | Party        | Description             | Date          |
-|:-------------|:-------------|:------------------------|:--------------|
-| **History**  |  **Author**  | **Version Description** | **Completed** |
-| X11-9999-00  |  [Author]    | [Description]           |  9999-99-99   |
-|              |              |                         |               |
-| **Approval** | **Reviewer** | **Comments**            |  **Approval** |
-| X11-9999-00  | [Reviewer]   | [Comments]              |  9999-99-99   |
+| Version      | Party          | Description             | Date          |
+|:-------------|:---------------|:------------------------|:--------------|
+| **History**  |  **Author**    | **Version Description** | **Completed** |
+| X77-6734-00  | Mark J. Jensen | Initial Release         |  2025-03-23   |
+|              |                |                         |
+| **Approval** | **Reviewer**   | **Comments**            |  **Approval** |
+| X77-6734-00  | [Reviewer]     | [Comments]              |  9999-99-99   |
 

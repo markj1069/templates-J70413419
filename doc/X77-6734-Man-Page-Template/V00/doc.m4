@@ -24,7 +24,7 @@ define(`dc_description_release', `(N/A)')dnl
 define(`dc_description_tableOfContents', `(N/A)')dnl
 define(`dc_type', `text/markdown; charset=UTF-8')dnl
 define(`dc_source', `https://github.com/markj1069/templates-J70413419/tree/master/doc/X77-6734/V00')dnl
-define(`dc_relation', `Version 00')dnl
+define(`dc_relation', `Version 00.00.01')dnl
 define(`dc_relation_isVersionOf', `(N/A)')dnl
 define(`dc_relation_hasVersion', `(N/A)')dnl
 define(`dc_relation_isReplacedBy', `(N/A)')dnl
@@ -48,17 +48,17 @@ define(`dc_contributor_role', `(N/A)')dnl
 define(`dc_rights', `CC BY 4.0')dnl
 define(`dc_rights_accessRights', `See license.')dnl
 define(`dc_rights_license', `https://creativecommons.org/licenses/by/4.0/legalcode')dnl
-define(`dc_date', `YYYY-MM-DD')dnl
+define(`dc_date', `2025-03-23')dnl
 define(`dc_date_accepted', `YYYY-MM-DD')dnl
-define(`dc_date_created', `YYYY-MM-DD')dnl
+define(`dc_date_created', `2025-03-23')dnl
 define(`dc_date_dateAccepted', `YYYY-MM-DD')dnl
 define(`dc_date_dateCopyrighted', `YYYY-MM-DD')dnl
 define(`dc_date_dateSubmitted', `YYYY-MM-DD')dnl
 define(`dc_date_valid', `YYYY-MM-DD')dnl
-define(`dc_date_available', `YYYY-MM-DD')dnl
+define(`dc_date_available', `2025-03-23')dnl
 define(`dc_date_issued', `YYYY-MM-DD')dnl
 define(`dc_date_modified', `YYYY-MM-DD')dnl
-define(`dc_format', `Specification')dnl
+define(`dc_format', `Man Page')dnl
 define(`dc_format_extent', `(N/A)')dnl
 define(`dc_format_medium', `Markdown')dnl
 define(`dc_identifier', `X77-6734-00')dnl

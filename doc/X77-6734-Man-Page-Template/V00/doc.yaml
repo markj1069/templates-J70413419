@@ -90,4 +90,10 @@ description: "dc_description"
 lang: "dc_language"
 test: "dc_creator_jobTitle"
 toc: true
+
+# Man Page Variables
+
+header: "Olaus Bash Sell Library"
+footer: "dc_date"
+section: "1"
 ...
