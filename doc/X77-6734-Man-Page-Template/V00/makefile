@@ -3,6 +3,9 @@
 MAC = /usr/bin/m4
 SED = /usr/bin/sed
 
+.DEFAULT_GOAL := all
+MAKEFLAGS += --no-print-directory
+
 # Targets
 
 .PHONY: all
@@ -72,12 +75,36 @@ doc.pdf pdf:	doc.o.mkd doc.o.yaml doc.m4
     	--standalone --shift-heading-level-by=-1 \
     	--output=doc.pdf
 
-# Clean up the intermediate files.
+# Clean up the directory.
 clean:
-	rm -f doc.o.mkd  doc.o.yaml *.tmp
+	@-rm -f core   2>/dev/null        # Remove code dumps.
+	@-rm -f *~     2>/dev/null        # Remove backup files.
+	@-rm -f *.bak  2>/dev/null        # Remove backup files.
+	@-rm -f *.hold 2>/dev/null        # Remove temporary files.
+	@-rm -f hold.* 2>/dev/null        # Remove temporary files.
+	@-rm -f *.sed  2>/dev/null        # Remove sed commands.
+	@-rm -f *.sql  2>/dev/null        # Remove sqlite3 commands.
+	@-rm -f *.tar  2>/dev/null        # Remove tar archives.
+	@-rm -f *.tgz  2>/dev/null        # Remove tar archives.
+	@-rm -f *.tmp  2>/dev/null        # Remove temporary files.
+	@-rm -f tmp.*  2>/dev/null        # Remove temporary files.
+	@-rm -f *.txt  2>/dev/null        # Remove text files.
 
-# Clean up the intermediate and output files.
 cleanall:
-	rm -f doc.o.mkd  doc.o.yaml *.tmp
-	rm -f doc.html doc.man doc.pdf
+	@-make clean
+	@-rm -f *.html 2>/dev/null        # Remove derived HTML files.
+	@-rm -f doc.o.mkd 2>/dev/null     # Remove intermediate files.
+	@-rm -f doc.o.yaml 2>/dev/null    # Remove intermediate files.
+	@-rm -f doc.man 2>/dev/null       # Remove derived files.
+	@-rm -f *.o    2>/dev/null        # Remove intermediate files.
+	@-rm -f *.pdf  2>/dev/null        # Remove derived PDF files.
+	@-rm -f *.1    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.2    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.3    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.4    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.5    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.6    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.7    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.8    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.9    2>/dev/null        # Remove derived man pages.
 

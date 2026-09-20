@@ -67,7 +67,7 @@ Enter the unique options and arguments here.
 [**--verbose**] | [**-v**]
 : Print detailed information from this script.
 
-[`--`]
+[--]
 : This is a flag showing that there are no more options on this command line.
 
 [_input_file_ ...]
