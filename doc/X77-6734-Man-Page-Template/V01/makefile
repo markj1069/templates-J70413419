@@ -2,6 +2,11 @@
 
 MAC = /usr/bin/m4
 SED = /usr/bin/sed
+DOC = /usr/sbin/asciidoctor
+PDF = /usr/sbin/asciidoctor-pdf
+
+.DEFAULT_GOAL := all
+MAKEFLAGS += --no-print-directory
 
 # Targets
 
@@ -10,74 +15,59 @@ SED = /usr/bin/sed
 .PHONY: cleanall
 .PHONY: html
 .PHONY: man
+.PHONY: o
 .PHONY: pdf
-.PHONY: yaml
+
 
 # Make all the output forms: html, man & pdf.
-all:	doc.o.mkd doc.o.yaml doc.m4
-	pandoc doc.o.mkd \
-    	--read=markdown --write=html5 \
-    	--citeproc --bibliography=/mnt/d/db/Zotero/My-Library.yaml \
-    	--metadata=link-citations --metadata-file=doc.o.yaml \
-    	--standalone --shift-heading-level-by=-1 \
-    	--output=doc.html
+all:
+	@-make html
+	@-make man
+	@-make pdf
 
-	pandoc doc.o.mkd \
-    	--read=markdown --write=man --mathjax \
-    	--citeproc --bibliography=/mnt/d/db/Zotero/My-Library.yaml \
-    	--metadata=link-citations --metadata-file=doc.o.yaml \
-    	--standalone --shift-heading-level-by=-1 \
-    	--output=doc.man
-
-	pandoc doc.o.mkd \
-    	--read=markdown --write=pdf \
-    	--citeproc --bibliography=/mnt/d/db/Zotero/My-Library.yaml \
-    	--metadata=link-citations --metadata-file=doc.o.yaml \
-    	--standalone --shift-heading-level-by=-1 \
-    	--output=doc.pdf
-
-# Update the intermediate YAML file.
-doc.o.yaml yaml:	doc.m4 doc.yaml
-	$(MAC) doc.m4 doc.yaml >doc.yaml.tmp # Build a usable YAML file.
-	$(SED) -e '/(N\/A)/d' -e '/YYYY-MM-DD/d' doc.yaml.tmp >doc.o.yaml   # Remove unneeded Dublin Core Variables.
-
-# Update the intermediate Markdown file.
-doc.o.mkd:		doc.m4 doc.mkd doc.o.yaml
-	$(MAC) doc.m4 doc.mkd >doc.o.mkd
+# Create the AsciiDoc file that will feed into asciidoctor.
+man.o o:	man.m4 man.adoc makefile
+	@-$(MAC) man.m4 man.adoc >man.o     # Apply the variables to the AsciiDoc file.
 
 # Make the HTML output file.
-doc.html html:	doc.o.mkd doc.o.yaml doc.m4
-	pandoc doc.o.mkd \
-    	--read=markdown --write=html5 --mathjax \
-    	--citeproc --bibliography=/mnt/d/db/Zotero/My-Library.yaml \
-    	--metadata=link-citations --metadata-file=doc.o.yaml \
-    	--standalone --shift-heading-level-by=-1 \
-    	--output=doc.html
+man.html html:	man.o
+	@-$(DOC) --backend html5 man.o --out-file man.html
 
 # Make the man page output file.
-doc.man man:	doc.o.mkd doc.o.yaml doc.m4
-	pandoc doc.o.mkd \
-    	--read=markdown --write=man --mathjax \
-    	--citeproc --bibliography=/mnt/d/db/Zotero/My-Library.yaml \
-    	--metadata=link-citations --metadata-file=doc.o.yaml \
-    	--standalone --shift-heading-level-by=-1 \
-    	--output=doc.man
+man.1 man:	man.o
+	@-$(DOC) --backend manpage man.o --out-file man.1
 
 # Make the PDF output file.
-doc.pdf pdf:	doc.o.mkd doc.o.yaml doc.m4
-	pandoc doc.o.mkd \
-    	--read=markdown --write=pdf \
-    	--citeproc --bibliography=/mnt/d/db/Zotero/My-Library.yaml \
-    	--metadata=link-citations --metadata-file=doc.o.yaml \
-    	--standalone --shift-heading-level-by=-1 \
-    	--output=doc.pdf
+doc.pdf pdf:	man.o
+	@-$(PDF)  man.o --out-file man.pdf
 
-# Clean up the intermediate files.
+# Clean up the directory.
 clean:
-	rm -f doc.o.mkd  doc.o.yaml *.tmp
+	@-rm -f core   2>/dev/null        # Remove code dumps.
+	@-rm -f *~     2>/dev/null        # Remove backup files.
+	@-rm -f *.bak  2>/dev/null        # Remove backup files.
+	@-rm -f *.hold 2>/dev/null        # Remove temporary files.
+	@-rm -f hold.* 2>/dev/null        # Remove temporary files.
+	@-rm -f *.sed  2>/dev/null        # Remove sed commands.
+	@-rm -f *.sql  2>/dev/null        # Remove sqlite3 commands.
+	@-rm -f *.tar  2>/dev/null        # Remove tar archives.
+	@-rm -f *.tgz  2>/dev/null        # Remove tar archives.
+	@-rm -f *.tmp  2>/dev/null        # Remove temporary files.
+	@-rm -f tmp.*  2>/dev/null        # Remove temporary files.
+	@-rm -f *.txt  2>/dev/null        # Remove text files.
 
-# Clean up the intermediate and output files.
 cleanall:
-	rm -f doc.o.mkd  doc.o.yaml *.tmp
-	rm -f doc.html doc.man doc.pdf
+	@-make clean
+	@-rm -f *.html 2>/dev/null        # Remove derived HTML files.
+	@-rm -f *.o    2>/dev/null        # Remove intermediate files.
+	@-rm -f *.pdf  2>/dev/null        # Remove derived PDF files.
+	@-rm -f *.1    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.2    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.3    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.4    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.5    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.6    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.7    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.8    2>/dev/null        # Remove derived man pages.
+	@-rm -f *.8    2>/dev/null        # Remove derived man pages.
 
