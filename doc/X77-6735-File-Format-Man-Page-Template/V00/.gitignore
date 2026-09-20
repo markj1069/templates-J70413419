@@ -1,9 +1,12 @@
 core
 *~
 *.bak
+doc.o.mkd
+doc.o.yaml
 *.hold
 hold.*
 *.html
+*.man
 *.o
 *.pdf
 *.sed
