@@ -69,5 +69,4 @@ cleanall:
 	@-rm -f *.6    2>/dev/null        # Remove derived man pages.
 	@-rm -f *.7    2>/dev/null        # Remove derived man pages.
 	@-rm -f *.8    2>/dev/null        # Remove derived man pages.
-	@-rm -f *.8    2>/dev/null        # Remove derived man pages.
-
+	@-rm -f *.9    2>/dev/null        # Remove derived man pages.
