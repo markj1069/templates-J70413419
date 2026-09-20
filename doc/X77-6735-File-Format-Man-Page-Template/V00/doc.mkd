@@ -1,0 +1,143 @@
+changecom(`/*', `*/')dnl
+
+# dc_title
+
+## NAME
+
+**dc_title** — One-line description of this script's purpose
+
+
+## DESCRIPTION
+
+What does this script do?
+
+## FILE FORMAT
+
+
+
+## SECURITY
+
+**Note:** You must be the superuser to run this function.
+
+**Warning:** This function contains security info.
+Do not set world-readable. Better yet, redesign
+so that you do not save security information in your source code.
+
+You do not need superuser authority to run this script.
+
+## EXAMPLES
+
+Example 1
+
+Example 2
+
+...
+
+## Notes & Caveats
+
+What additional information would be useful to a programmer and user?
+
+## Version
+
+Which version
+
+## History
+
+| Version  | Author         | Description             | Date          |
+|:---------|:---------------|:------------------------|:--------------|
+| 00.00.01 | Mark J. Jensen | Initial Release         |  2025-03-24   |
+
+
+
+## SEE ALSO
+What other scripts and commands are helpful for the programmer and user?
+
+## Configuration & Environmnet
+
+What environmental variables are necessary for this script to operate?
+
+## Dependencies
+
+A list of all of the other scripts that this script relies upon, including any
+restrictions on versions, part of this script's distribution,
+or must be installed separately.
+
+
+## Incompatabilities
+
+The programmer and user can not use this script with the following commands.
+This restriction may be due to name conflicts in the interface, competition for system or program resources, or internal limitations of BASH (for example,
+many modules that use source code filters are mutually incompatible).
+
+## Files
+
+List the files dc_title uses.
+
+## Bugs & Limitations
+
+List known problems with the module, together with some indication of whether they are likely to be fixed in an upcoming release.
+
+Also, list the restrictions on the module's features: data types that cannot be handled, performance issues and the circumstances in which they may arise, practical limitations on the size of data sets, special cases that are not (yet) handled, etc.
+
+The initial template usually has: "There are no known bugs in this module."
+
+Please report problems to [Maintainer name(s)](mailto:xxx@yyy.zzz).
+
+## Author
+Author <author@server>
+
+## License & Copyright
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/markj1069/templates-J70413419/tree/master/doc/X77-6734/V00">X77-6735 Man Page Template</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/jensenmark/">Mark J Jensen</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+
+
+## SOURCE
+
+**dc_title** can be found at [X77-6734-Man-Page-Template](https://github.com/markj1069/templates-J70413419/tree/master/doc/X77-6734-Man-Page-Template).
+
+\newpage
+
+## Colophon
+
+| Field            | Value                               |
+|------------------|-------------------------------------|
+| Project No.      | dc_identifier_proj                  |
+| Document Func.   | dc_identifier_func                  |
+| Document Type    | dc_format                           |
+| Document No.     | dc_identifier_doc                   |
+| Publication Date | dc_date                             |
+| Rights           | dc_rights                           |
+| Source           | [dc_source](dc_source)              |
+
+## Abstract
+
+dc_description_abstract
+
+### Keywords
+
+* dc_keyword_1
+* dc_keyword_2
+* dc_keyword_3
+* dc_keyword_4
+* dc_keyword_5
+* dc_keyword_6
+
+## Identification
+
+| Software         | Values            |
+|:-----------------|:------------------|
+| **Project Name** | dc_title_subtitle |
+| **Date**         | dc_date           |
+| **Version**      | dc_identifier     |
+| **By**           | dc_creator        |
+
+### Revision
+
+| Version      | Party          | Description             | Date          |
+|:-------------|:---------------|:------------------------|:--------------|
+| **History**  |  **Author**    | **Version Description** | **Completed** |
+| X77-6734-00  | Mark J. Jensen | Initial Release         |  2025-03-23   |
+|              |                |                         |
+| **Approval** | **Reviewer**   | **Comments**            |  **Approval** |
+| X77-6734-00  | [Reviewer]     | [Comments]              |  9999-99-99   |
+

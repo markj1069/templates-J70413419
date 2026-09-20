@@ -1,0 +1,43 @@
+changecom(`/*', `*/')dnl
+
+## Name
+
+*filetype* - dc_title
+
+## Synopsis
+
+_filename_
+
+## Description
+
+## Files
+
+## Notes
+
+## Examples
+
+## See Also
+
+ dc_relation_references
+
+## References
+
+[Enter references here.]
+
+## Acknowledgements
+
+[Enter acknowledgements here.]
+
+\newpage
+
+## Colophon
+
+| Field            | Value                               |
+|------------------|-------------------------------------|
+| Project No.      | dc_identifier_proj                  |
+| Document Func.   | dc_identifier_func                  |
+| Document Type    | dc_format                           |
+| Document No.     | dc_identifier_doc                   |
+| Publication Date | dc_date                             |
+| Rights           | dc_rights                           |
+| Source           | [dc_source](dc_source)              |

@@ -1,0 +1,89 @@
+
+---
+## Dublin Core Metadata Initiative
+
+dc.title: "Letter Document Template"
+dc.title.alternative: "Letter Template"
+dc.title.short: "Letter Template"
+dc.title.subtitle: "N/A"
+dc.subject: N/A
+dc.description: |
+    Maecenas a magna facilisis,
+    tincidunt quam eget,
+    lobortis tortor.
+    Aliquam erat volutpat.
+    Nam posuere urna ligula,
+    vitae semper diam convallis ut.
+    
+    Cras auctor ut felis eu finibus.
+    Nam lobortis rutrum pharetra.
+    Sed eget mauris vitae odio rhoncus malesuada sed ac dolor.
+    Nullam eu velit enim.
+    Cras nulla purus,
+    accumsan at commodo at,
+    finibus at nulla.
+    Etiam non est nulla.
+dc.description.abstract: Nullam commodo, nisi vel euismod porta, ex arcu blandit orci, sagittis finibus metus massa a nunc. Vestibulum tincidunt scelerisque sem a volutpat. Curabitur ipsum massa, faucibus nec lectus scelerisque, lobortis porttitor nibh.
+dc.type: "text/markdown; charset=UTF-8"
+dc.source: "https://github.com/markj1069/templates-J70413419/tree/master/doc/G11-6715/V00"
+dc.relation: "Version 00"
+
+# Intellectual Property
+
+dc.creator: "Mark J. Jensen"
+dc.publisher: "Mark J. Jensen"
+dc.rights: "CC BY 4.0"
+dc.rights.accessRights: "See license."
+dc.rights.license: "https://creativecommons.org/licenses/by/4.0/legalcode"
+
+# Instantiation
+
+dc.format: "Letter"
+dc.format.medium: "Markdown"
+dc.identifier.doc: "X10-6715-00"
+dc.identifier.proj: "J70413419"
+dc.language: "en-US"
+
+# DCMI Terms
+
+dc.accrualMethod: "Item Creation"
+dc.audience: "Other"
+dc.provenance: "Item Creation"
+dc.rightsHolder: "Mark J. Jensen"
+
+# Pandoc Metadata
+
+title: "Letter Document Template"
+title.short: "Letter Template"
+author: "Mark J. Jensen"
+documentclass: "scrartcl"
+geometry:
+- top=72pt
+- left=72pt
+- right=60pt
+- heightrounded
+papersize: "letter"
+fontsize: "12pt"
+links-as-notes: "true"
+subject: "letter, template, , , , "
+stand-alone: true
+keywords: "letter, template, , , , "
+description: "|
+    Maecenas a magna facilisis,
+    tincidunt quam eget,
+    lobortis tortor.
+    Aliquam erat volutpat.
+    Nam posuere urna ligula,
+    vitae semper diam convallis ut.
+    
+    Cras auctor ut felis eu finibus.
+    Nam lobortis rutrum pharetra.
+    Sed eget mauris vitae odio rhoncus malesuada sed ac dolor.
+    Nullam eu velit enim.
+    Cras nulla purus,
+    accumsan at commodo at,
+    finibus at nulla.
+    Etiam non est nulla."
+lang: "en-US"
+test: "Independent Scholar"
+...

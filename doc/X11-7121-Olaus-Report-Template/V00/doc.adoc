@@ -1,0 +1,51 @@
+changecom(`/*', `*/')dnl
+dc_date_issued
+
+dc_date_issued
+
+Body Paragraph 1
+
+Body Paragraph 2
+
+Body Paragraph 3
+
+Body Paragraph 4
+
+Body Paragraph 5
+
+ndc_closing
+
+&emsp;
+
+dc_creator_sig
+
+ndc_cc ndc_cc_1 ndc_cc_2 ndc_cc_3 ndc_cc_4 ndc_cc_5 ndc_cc_6
+
+ndc_enclosure ndc_enc_1 ndc_enc_2 ndc_enc_3 ndc_enc_4 ndc_enc_5 ndc_enc_6
+
+\newpage
+
+## Colophon
+
+| Field            | Value                               |
+|------------------|-------------------------------------|
+| Project No.      | dc_identifier_proj                  |
+| Document Func.   | dc_identifier_func                  |
+| Document Type    | dc_format                           |
+| Document No.     | dc_identifier_doc                   |
+| Publication Date | dc_date                             |
+| Rights           | dc_rights                           |
+| Source           | [dc_source](dc_source)              |
+
+## Abstract
+
+dc_description_abstract
+
+### Keywords
+
+* dc_keyword_1
+* dc_keyword_2
+* dc_keyword_3
+* dc_keyword_4
+* dc_keyword_5
+* dc_keyword_6
