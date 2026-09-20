@@ -1,0 +1,394 @@
+= dc_title(1)
+:doctype: manpage
+:man manual: User Commands
+:man source: script 1.0.0
+
+== Name
+
+dc_title_short - dc_title_subtitle
+
+== Synopsis
+
+**dc_title**
+{startsb}**--input**=_input_file_ | **-i** _input_file_{endsb}
+{startsb}**--output**=_output_file_ | **-o** _output_file_{endsb}
+{startsb}**--help**{endsb}
+{startsb}**--log** | **-l** {endsb}
+{startsb}**--man**{endsb}
+{startsb}**--quiet**{endsb} | **-q**{endsb}
+{startsb}**--usage**{endsb}
+{startsb}**--debug**{endsb}
+{startsb}**--version**{endsb}
+{startsb}**--verbose**{endsb} | **-v**{endsb}
+{startsb}--{endsb}
+{startsb} _input_file_ ...{endsb}
+// There needs to be a space between the {startsb} and the _input_file_
+// to avoid a formatting issue in the man page, no italics.
+
+
+
+== Description
+
+What does this script do?
+
+=== Options & Arguments
+
+Enter the unique options and arguments here.
+
+==== Default Options & Arguments
+
+{startsb}**--input**=_input_file_ | **-i** _input_file_{endsb}
+: Specify an input source {startsb}default: STDIN{endsb}. **--input** may be specified multiple times.
+
+{startsb}**--output**=_output_file_ | **-o** _output_file_{endsb}
+: Specify the output destination {startsb}default: STDOUT{endsb}. **--output** may be specified only once.
+
+{startsb}**--help** | **-h**{endsb}
+: Print this summary
+
+{startsb}**--log**{endsb}
+: switch to print the log file to _dc_title.log_.
+
+{startsb}**--man**{endsb}
+: Print the man file
+
+{startsb}**--quiet**{endsb} | **-q**{endsb}
+: Run silent
+
+{startsb}**--usage**{endsb}
+: Print the synopsis line
+
+{startsb}**--debug**{endsb}
+: Include debugging output in STDERR
+
+{startsb}**--version**{endsb}
+: Print the version information
+
+{startsb}**--verbose**{endsb} | **-v**{endsb}
+: Print detailed information from this script.
+
+{startsb}--{endsb}
+: This is a flag showing that there are no more options on this command line.
+
+{startsb} _input_file_ ...{endsb}
+: Specify input zero or more input sources.
+// There needs to be a space between the {startsb} and the _input_file_
+// to avoid a formatting issue in the man page, no italics.
+
+
+== SECURITY
+
+**Note:** You must be the superuser to run this function.
+
+**Warning:** This function contains security info.
+Do not set world-readable. Better yet, redesign
+so that you do not save security information in your source code.
+
+You do not need superuser authority to run this script.
+
+== EXAMPLES
+
+Example 1
+
+Example 2
+
+...
+
+== Notes & Caveats
+
+What additional information would be useful to a programmer and user?
+
+== History
+.Toolet History
+[cols="^1,<1,<1,^1", options="header"]
+|===
+
+| Version  
+| Author         
+| Description             
+| Date
+
+| 00.00.00
+| Mark J. Jensen
+| Initial Release
+| 2025-03-24
+
+|===
+
+
+== Diagnostics
+
+=== OLS9999F
+
+routine: Error message3
+
+==== Severity
+
+Fatal Error, EX_CODE=16
+
+==== Explanation:
+
+Why was this error message thrown?
+
+==== System Action
+
+The system action depends upon the error conditions described in the accompanying messages.
+
+==== User Response
+
+See the specific error message to determine the user action.
+
+==== Programmer Response
+
+Isolate the call to **ols_rd_excode** and supply the intended exit code.
+
+==== System Programmer Response
+
+Analyze the errors to determine your response.
+
+
+== SEE ALSO
+What other scripts and commands are helpful for the programmer and user?
+
+== Configuration & Environmnet
+
+What environmental variables are necessary for this script to operate?
+
+== Dependencies
+
+A list of all of the other scripts that this script relies upon, including any
+restrictions on versions, part of this script's distribution,
+or must be installed separately.
+
+
+== Incompatabilities
+
+The programmer and user can not use this script with the following commands.
+This restriction may be due to name conflicts in the interface, competition for system or program resources, or internal limitations of BASH (for example,
+many modules that use source code filters are mutually incompatible).
+
+== Files
+
+List the files dc_title uses.
+
+== Bugs & Limitations
+
+List known problems with the module, together with some indication of whether they are likely to be fixed in an upcoming release.
+
+Also, list the restrictions on the module's features: data types that cannot be handled, performance issues and the circumstances in which they may arise, practical limitations on the size of data sets, special cases that are not (yet) handled, etc.
+
+The initial template usually has: "There are no known bugs in this module."
+
+Please report problems to dc_creator <ndc_creator_email>.
+
+== Author
+
+dc_creator <ndc_creator_email>
+
+== License & Copyright
+
+dc_identifier_doc dc_title_subtitle is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). You are free to share and adapt this work, provided you give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+
+
+== SOURCE
+
+ifdef::backend-pdf[]
+\newpage
+endif::backend-pdf[]
+
+ifndef::backend-manpage[]
+
+== Colophon
+
+
+[cols="<1,<1", options="header"]
+
+|===
+
+| Field
+| Value
+
+| **Project No.**
+| J70413419
+
+| **Document Func.**
+| Template
+
+| **Document Type**
+| Man Page
+
+| **Document No.**
+| dc_identifier_doc
+
+| **Publication Date**
+| 2025-03-23
+
+| **Rights**
+| CC BY 4.0
+
+|===
+
+
+== Abstract
+
+The *man pages*, short for *reference manual pages*, are your keys to Linux.
+
+=== Keywords
+
+* software
+* man page
+* template
+* 
+* 
+* 
+
+== Identification
+
+[cols="<1,<1", options="header"]
+
+|===
+
+| Software
+| Values
+
+| **Project Name**
+| Document Templates
+
+| **Date**
+| 2025-03-23
+
+| **Version**
+| dc_identifier_doc
+
+| **By**
+| Mark J. Jensen
+
+|===
+
+
+=== Revision
+
+[cols="<1,<1,<1,<1", options="header"]
+|===
+
+| Version
+| Party
+| Description
+| Date
+
+| **History**
+| **Author**
+| **Version Description**
+| **Completed**
+
+| dc_identifier_doc
+| dc_creator
+| dc_description_note
+| dc_date
+
+| **Approval**
+| **Reviewer**
+| **Comments**
+|  **Approval**
+
+| dc_identifier_doc
+| dc_contributor
+| dc_contributor_rel_comments
+| dc_date_dateAccepted
+
+|===
+
+endif::backend-manpage[]
+
+////
+AsciiDoc crib (column 0 is syntax)
+
+COMMENTS
+ "//" line comment   — must start the line
+ "////" ... ////     — block comment
+
+TITLE / SECTIONS
+= title           — document title (man: name(1) no spaces)
+== Name           — first man section
+=== subsection
+[discrete] == x   — heading, not a real section
+
+MAN PAGE
+= cmd(1)
+:doctype: manpage
+== Name
+cmd - purpose     — hyphen-minus, spaces around it
+== Synopsis
+*cmd* [_OPT_] _FILE_
+
+LISTS
+term:: definition
+term::: nested
+* item / . numbered
+
+TABLE
+|===
+|A |B
+|1 |2
+|===
+man backend: simple tables only; prefer term::
+
+MARKUP
+// *bold*  _italic_  {backtick}mono{backtick}
+{startsb} [   {endsb} ]
+{vbar} |      {asterisk} *
+:underscore: _
+{underscore}
+
+CONDITIONALS
+ifdef::backend-manpage[] ... endif::[]
+ifndef::backend-manpage[] ... endif::[]
+ifdef::name[one-liner]
+
+BRACKETS
+[attrs] at start of line = attributes, not text
+use {startsb} or {empty}[ for a real [
+
+SPECIAL
+include::file.adoc[]
+
+SPECIAL CHARACTERS  {name} → glyph
+
+empty / blank     (nothing)
+sp                space
+nbsp              non-breaking space
+zwsp              zero-width space
+wj                word joiner
+
+apos              '
+quot              "
+lsquo rsquo       ‘ ’
+ldquo rdquo       “ ”
+deg               °
+
+amp               &
+lt gt             < >
+plus              +
+pp                ++
+vbar              |
+brvbar            ¦
+startsb endsb     [ ]
+caret             ^
+asterisk          *
+tilde             ~
+backslash         \
+backtick          {backtick}
+two-colons        ::
+two-semicolons    ;;
+cxx               C++
+
+Not built in — put these in the document header:
+:underscore: _
+:hash: #
+
+Then: {underscore}  {hash}
+
+Entities also work: &#91; [   &#93; ]   &#95; _
+
+////
