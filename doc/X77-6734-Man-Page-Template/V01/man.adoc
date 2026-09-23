@@ -1,4 +1,4 @@
-= dc_title(1)
+= dc_title_mac(dc_title_short,1)
 :doctype: manpage
 :man manual: User Commands
 :man source: script 1.0.0
@@ -115,7 +115,7 @@ What additional information would be useful to a programmer and user?
 
 |===
 
-
+////
 == Diagnostics
 
 === OLS9999F
@@ -146,6 +146,7 @@ Isolate the call to **ols_rd_excode** and supply the intended exit code.
 
 Analyze the errors to determine your response.
 
+////
 
 == SEE ALSO
 What other scripts and commands are helpful for the programmer and user?
@@ -169,7 +170,32 @@ many modules that use source code filters are mutually incompatible).
 
 == Files
 
-List the files dc_title uses.
+A list of the files that are used by this script.
+
+=== Input Files
+
+==== _STDIN_
+
+_STDIN_:: Does **dc_title** use standard in?
+
+==== Other Input Files
+
+What other input files does **dc_title** use?
+
+=== Output Files
+
+==== _STDOUT_
+
+Describe the _STDOUT_ output file format and content.
+
+==== _STDERR_
+
+Describe the _STDERR_ output file format and content.
+
+=== Other Output Files
+
+Are there other output files created by **dc_title**.
+
 
 == Bugs & Limitations
 
@@ -187,9 +213,9 @@ dc_creator <ndc_creator_email>
 
 == License & Copyright
 
-dc_identifier_doc dc_title_subtitle is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). You are free to share and adapt this work, provided you give appropriate credit, provide a link to the license, and indicate if changes were made.
-
-
+dc_identifier_doc, {ldquo}dc_title_subtitle{rdquo} is licensed under the Creative Commons Attribution 4.0 Inter
+national License (CC BY 4.0). You are free to share and adapt this work, provided you give appropriate credit,
+provide a link to the license, and indicate if changes were made.
 
 == SOURCE
 
@@ -210,22 +236,22 @@ ifndef::backend-manpage[]
 | Value
 
 | **Project No.**
-| J70413419
+| dc_identifier
 
 | **Document Func.**
-| Template
+| dc_identifier_func
 
 | **Document Type**
-| Man Page
+| ndc_identifier_type
 
 | **Document No.**
 | dc_identifier_doc
 
 | **Publication Date**
-| 2025-03-23
+| dc_date_issued
 
 | **Rights**
-| CC BY 4.0
+| dc_rights
 
 |===
 
@@ -253,10 +279,10 @@ The *man pages*, short for *reference manual pages*, are your keys to Linux.
 | Values
 
 | **Project Name**
-| Document Templates
+| ndc_identifier_proj_name
 
 | **Date**
-| 2025-03-23
+| dc_date
 
 | **Version**
 | dc_identifier_doc
@@ -305,8 +331,9 @@ endif::backend-manpage[]
 AsciiDoc crib (column 0 is syntax)
 
 COMMENTS
- "//" line comment   — must start the line
- "////" ... ////     — block comment
+
+// "//" line comment   — must start the line
+// "////" ... ////     — block comment
 
 TITLE / SECTIONS
 = title           — document title (man: name(1) no spaces)
@@ -320,7 +347,7 @@ MAN PAGE
 == Name
 cmd - purpose     — hyphen-minus, spaces around it
 == Synopsis
-*cmd* [_OPT_] _FILE_
+*cmd* {startsb}_OPT_{endsb} _FILE_
 
 LISTS
 term:: definition
